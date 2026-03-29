@@ -584,8 +584,9 @@ footer{position:relative;z-index:4;background:var(--bg2);border-top:1px solid va
       <div class="cb2">
         <span class="cm2">-- Oxyo Script Loader</span><br>
         <span class="cm2">-- One line. Full power.</span><br><br>
+        <span class="ck">getgenv</span>().<span class="ck">SCRIPT_KEY</span> = <span class="cs">"KEYLESS"</span><br>
         <span class="cf">loadstring</span>(<span class="ck">game</span>:<span class="cf">HttpGet</span>(<br>
-        &nbsp;&nbsp;<span class="cs">'https://raw.githubusercontent.com/<br>&nbsp;&nbsp;mohammadahmadqazplm-gif/Loader.-/<br>&nbsp;&nbsp;refs/heads/main/Loader'</span>,<br>
+        &nbsp;&nbsp;<span class="cs">'https://api.jnkie.com/api/v1/luascripts/<br>&nbsp;&nbsp;public/ac0d1bcf1b6ead4a9919227ef9c54afd<br>&nbsp;&nbsp;ad68f94f99b818f2311b6e90ec9acd66/download'</span>,<br>
         &nbsp;&nbsp;<span class="ck">true</span><br>))()
       </div>
       <button class="cbtn" onclick="copyLoader()"><span>⧉ &nbsp;Copy Loader Script</span></button>
@@ -1108,7 +1109,7 @@ setTimeout(()=>{
 },1000);
 
 function copyLoader(){
-  navigator.clipboard.writeText(`loadstring(game:HttpGet('https://raw.githubusercontent.com/mohammadahmadqazplm-gif/Loader.-/refs/heads/main/Loader',true))()`);
+  navigator.clipboard.writeText(`getgenv().SCRIPT_KEY = "KEYLESS"\nloadstring(game:HttpGet('https://api.jnkie.com/api/v1/luascripts/public/ac0d1bcf1b6ead4a9919227ef9c54afdad68f94f99b818f2311b6e90ec9acd66/download',true))()`);
   const n=document.getElementById('notify');
   n.classList.add('show');
   setTimeout(()=>n.classList.remove('show'),2600);
